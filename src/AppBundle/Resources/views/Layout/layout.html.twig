@@ -1,0 +1,26 @@
+{#src/AppBundle/Resources/views/Layout/layout.html.twig#}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+<h1>MicroWeb</h1>
+
+<p>Menu:</p>
+
+<ul>
+    <li><a href="{{ path('homepage') }}">Homepage</a></li>
+    <li><a href="{{ path('sunrise_and_sunset') }}">Východ a západ Slunce</a></li>
+    <li><a href="{{ path('contact') }}">Kontakt</a></li>
+</ul>
+
+<h2>{{ title }}</h2>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

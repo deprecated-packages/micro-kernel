@@ -1,0 +1,14 @@
+{
+  "require": {
+    "symfony/symfony": "^3.0",
+    "sensio/framework-extra-bundle": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    },
+    "files": [
+      "app/MicroKernel.php"
+    ]
+  }
+}

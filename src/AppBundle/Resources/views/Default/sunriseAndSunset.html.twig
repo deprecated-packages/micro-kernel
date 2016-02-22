@@ -1,0 +1,14 @@
+{#src/AppBundle/Resources/views/Default/sunriseAndSunset.html.twig#}
+{% extends "AppBundle:Layout:layout.html.twig" %}
+{% set title = "Východ a západ Slunce" %}
+
+{% block content %}
+    <p>
+        Dne {{ date|date("d.m.Y") }} v Praze Slunce vychází v {{ sunrise }} a zapadá v {{ sunset }}.
+    </p>
+    <ul>
+        <li><a href="{{ path('sunrise_and_sunset', {'when': '0'}) }}">dnes</a></li>
+        <li><a href="{{ path('sunrise_and_sunset', {'when': '1'}) }}">zítra</a></li>
+        <li><a href="{{ path('sunrise_and_sunset', {'when': '2'}) }}">pozítří</a></li>
+    </ul>
+{% endblock content %}
